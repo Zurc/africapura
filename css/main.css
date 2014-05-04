@@ -91,6 +91,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background: #d2cbc5;
+}
+
 .center {
     margin: 0 auto;
     position: relative;
@@ -182,14 +186,33 @@ nav ul li a {
     background: url("../img/slider-rect.png") repeat-x;
     height: 86px;
     position: relative;
+    color: #fff;
 }
 
 .slider-africapura {
-    color: #fff;
+    
     position: absolute;
     top: 10px;
     left: 30px;
     font: normal normal 200 48px/70px chalkduster, Helvetica, sans-serif ;
+}
+
+.slider-ppp {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    font: normal normal 200 20px/70px chalkduster, Helvetica, sans-serif ;
+}
+
+/*
+********************
+* Content
+********************
+*/
+
+.content {
+    background: #fff;
+    max-width: 960px;
 }
 
 
