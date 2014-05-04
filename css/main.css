@@ -92,16 +92,15 @@ textarea {
    ========================================================================== */
 
 .center {
-    width: 960px;
     margin: 0 auto;
     position: relative;
+    width: 960px;
 }
 
 header {
+    background: url("../img/header.png") repeat-x;
     height: 142px;
     width: 100%;
-    background: url("../img/header.png") repeat-x;
-
 }
 
 header .wrap {
@@ -110,18 +109,61 @@ header .wrap {
 
 .logo {
     display: block;
+    padding: 12px 0 11px 15px;
     width: 224px;
-    padding: 12px 0 0 15px;
-    background-color: red;
 }
 
+.center ul {
+    margin: 0;
+    padding: 0;
+}
+/*hide the submenus*/
+nav ul ul {
+    display: none;
+}
+/*to make reapear the menus*/
+nav ul li:hover > ul {
+    display: block;
+}
+/*style the main navigation menu*/
+nav ul {
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+    nav ul:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 
+nav ul li {
+    background: url("../img/menu-bg-degrade.png");
+    color: #fff;
+    height: 39px;
+    float: left;
+    line-height: 1;
+    padding: 0 10px; 
+    position: relative;
+          
+}
 
+nav ul li:before {
+    content: url("../img/menu-bg-izq.png");
+    position: relative;
+    left: -10px;
+}
 
+nav ul li:after {
+    content: url("../img/menu-bg-der.png");
+    position: relative;
+    left: 10px;
+}
+    nav ul li a {
+        display: inline-block;
 
-
-
-
+        
+    }
 
 
 /* ==========================================================================
