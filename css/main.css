@@ -164,6 +164,35 @@ nav ul li a {
     line-height: 3;
 }
 
+
+/*
+********************
+* slider
+********************
+*/
+
+.slider {
+    background: maroon url("../img/bg-row-new.jpg") repeat-x;
+    height: 436px;
+    width: 100%;
+
+}
+
+.slider-rect {
+    background: url("../img/slider-rect.png") repeat-x;
+    height: 86px;
+    position: relative;
+}
+
+.slider-africapura {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font: normal normal 200 48px/70px chalkduster, Helvetica, sans-serif ;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
