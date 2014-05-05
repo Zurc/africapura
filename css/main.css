@@ -269,19 +269,40 @@ nav ul ul {
     float: left;
     margin: 20px auto;
     position: relative;
+    z-index: 1;
+    height: 156px;
+    overflow: hidden;
 }
 
-.thumbnail h3 {
-    display: none; 
+.thumbnail img {
+    margin-top: 0;
+    -webkit-transition: margin 0.3s ease-in-out;
+    -moz-transition: margin 0.3s ease-in-out;
+    -ms-transition: margin 0.3s ease-in-out;
+    -o-transition: margin 0.3s ease-in-out;
+    transition: margin 0.3s ease-in-out;
+}
+
+.thumbnail img:hover {
+    margin-top: -156px;
+}
+
+/*.thumbanimate {
+    background: #72252D;
+    background: rgba(0, 0, 0, 0.5);
+    width: 210px;
+    height: 156px;
+    position: absolute;
+    top: -156px;
+    z-index: 2;
+}
+
+.thumbanimate h3 { 
     position: absolute;
     top: 20px;
     left: 15%;
     color: #fff !important;
-}
-
-.thumbnail:hover > h3 {
-    display: block;
-}
+}*/
 
 .content h3, .content p, .side-bar h3, .side-bar p {
     color: #72252D;
