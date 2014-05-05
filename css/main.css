@@ -223,6 +223,7 @@ nav ul li a {
 .content {
     background: #fff;
     max-width: 960px;
+    padding-bottom: 20px;
 }
 
 .content .row {
@@ -234,9 +235,61 @@ nav ul li a {
     margin: 20px auto;
 }
 
-.content h3, .content p {
-    color: #4c1113;
-    padding: 0 20px;
+.content h3, .content p, .side-bar h3, .side-bar p {
+    color: #72252D;
+}
+
+.side-bar img {
+    width: 290px;
+}
+
+.side-bar h3, .side-bar p {
+    padding: 0;
+}
+
+/*
+********************
+* Footer
+********************
+*/
+
+footer {
+    position: relative;
+    min-height: 245px;
+    background: url("../img/footer-bg.jpg") repeat-x;
+    padding-top: 12px;
+}
+
+.footer-menu, .footer-menu-last {
+    padding: 0 37px;
+    float: left;
+    height: 193px;
+    width: 20%;
+}
+
+.footer-menu {
+    border-right: 1px solid #ccc;
+}
+
+.footer-menu-last {
+    border-right: 0;
+}
+
+.footer-menu h4, .footer-menu-last h4 {
+    color: #72252D;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.footer-menu a, .footer-menu-last a {
+    margin-top: 7px;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    line-height: 12px;
 }
 /* ==========================================================================
    Helper classes
