@@ -93,6 +93,7 @@ textarea {
 
 body {
     background: #d2cbc5;
+    font-family: "Open Sans", sans-serif;
 }
 
 .row {
@@ -182,7 +183,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 15.8px;
+    padding: 10px 12px;
     line-height: 3;
 }
 
@@ -191,6 +192,9 @@ nav ul li a:hover {
     color: #fff;
 }
 
+nav ul li a, nav ul li a:hover , nav ul ul li a, nav ul ul li a:hover {
+    letter-spacing: 1px;
+}
 nav ul ul {
     position: absolute;
     top: 100%;
@@ -268,7 +272,6 @@ nav ul ul {
 }
 
 .thumbnail h3 {
-    font-family: "Open Sans", sans-serif;
     display: none; 
     position: absolute;
     top: 20px;
@@ -322,7 +325,6 @@ footer {
 
 .footer-menu h4, .footer-menu-last h4 {
     color: #72252D;
-    font-family: "Open Sans", sans-serif;
     font-size: 11px;
     font-weight: bold;
     line-height: 16px;
@@ -332,7 +334,6 @@ footer {
 .footer-menu a, .footer-menu-last a {
     margin-top: 7px;
     color: #FFF;
-    font-family: "Open Sans", sans-serif;
     font-size: 10px;
     line-height: 12px;
 }
