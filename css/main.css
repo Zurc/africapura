@@ -133,17 +133,18 @@ header .wrap {
 }
 
 nav ul ul {
-    display: none;
+     display: none; 
 }
 
-nav ul li:hover > ul {
-    display: block;
-}
+    nav ul li:hover > ul {
+        display: block;
+    }
 
 nav ul {
     list-style: none;
     position: relative;
     display: inline-table;
+    float: left; 
 }
     nav ul:after {
         content: "";
@@ -155,22 +156,29 @@ nav ul li {
     background: url("../img/menu-bg-degrade.png");
     color: #fff;
     height: 39px;
-    position: relative;
-    display: inline-block;
+    float: left; 
           
 }
 
-nav ul li:before {
-    content: url("../img/menu-bg-izq.png");
-    position: absolute;
+    nav ul li:before {
+        content: url("../img/menu-bg-izq.png");
+        position: absolute;
 
-}
+    }
 
-nav ul li:after {
-    content: url("../img/menu-bg-der.png");
-    position: absolute;
+    nav ul li:after {
+        content: url("../img/menu-bg-der.png");
+        position: absolute;
 
-}
+    }
+
+    nav ul li:hover {
+        background: url("../img/menu_act.png") repeat-x;
+    }
+        nav ul li:hover a {
+            color: #fff;
+        }
+
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -178,6 +186,29 @@ nav ul li a {
     line-height: 3;
 }
 
+nav ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+}
+    nav ul ul li {
+        float: none;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid red;
+        position: relative;
+    }
+    nav ul ul li:before, nav ul ul li:after {
+        content: "";
+    }
+    nav ul ul li a {
+        color: #fff;
+        padding: 15px 40px;
+    }
 
 /*
 ********************
