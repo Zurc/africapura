@@ -198,8 +198,8 @@ nav ul ul {
 }
     nav ul ul li {
         float: none;
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid red;
+        border-top: 1px solid maroon;
+        border-bottom: 1px solid #130303;
         position: relative;
     }
     nav ul ul li:before, nav ul ul li:after {
@@ -264,6 +264,20 @@ nav ul ul {
 .thumbnail {
     float: left;
     margin: 20px auto;
+    position: relative;
+}
+
+.thumbnail h3 {
+    font-family: "Open Sans", sans-serif;
+    display: none; 
+    position: absolute;
+    top: 20px;
+    left: 15%;
+    color: #fff !important;
+}
+
+.thumbnail:hover > h3 {
+    display: block;
 }
 
 .content h3, .content p, .side-bar h3, .side-bar p {
